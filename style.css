@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lumanosimo', 'cursive';
+}
+.login_principal {
+    background-color: #201b2c;
+    width: 100vw;   /*Propiedades que usam 100% ou pode ser qualquer outro tamanho em relação ao da tela tanto em largura(VW) como altura(VH)*/
+    height: 100vh;
+    display: flex; /*Faz com que os elementos fiques lado a lado*/
+    justify-content: center;
+    align-items: center;
+}
+.login_esquerdo {
+    width: 50vw; /*Vai ocupar 50% da largura total da tela*/
+    height: 100vh; /*Vai ocupar 100% do tamanho total da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /*Os itens são posicionados de cima para baixo dentro do elemento*/
+}
+.login_esquerdo > h1 {
+    color: #00ff88;
+}
+.imagem_esquerda {
+    width: 35vw;
+}
+.login_direito {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartao_login {
+    width: 60%; /*Vai ocupar 60% do percentual do seu elemento pai, neste caso 60% de 50%(login_direito)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px; /*1° direção da cor no eixo X; 2º direção da cor no eixo Y; 3° Blur(desfoque da caixa); podemos ainda colocar uma cor*/
+}
+.cartao_login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.campo_de_texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*Quando usado junto do flex direction column, vai alinhar os itens verticalmente, começando pela esquerda*/
+    justify-content: center;
+}
+.campo_de_texto > input {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;  /*tira o efeito em volta do elemento quando ele esta ativo*/
+    box-sizing: border-box;
+}
+.campo_de_texto > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.campo_de_texto > input::placeholder {
+    color: #f0ffff94;
+}
+.botao_login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow:  0px 10px 40px -12px #00ff8052; /*horizontal vertical > blur >spread > cor;  Ela é utilizada para especificar o tamanho da área de expansão ou propagação da sombra em torno do elemento.*/
+}
+.botao_login:hover {
+    font-size: 1em;
+}
