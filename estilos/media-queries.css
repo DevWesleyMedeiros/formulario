@@ -1,0 +1,40 @@
+@charset: "UTF-8";
+
+/* Telas: 
+dispositos pequenos: 600px a 768px
+dispositivos médio: 768px a 992px
+dispositivos médios e grande: 992px  
+*/ 
+
+@media only screen and (max-width: 950px) {
+    div.cartao_login {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    div.login_principal {
+        flex-direction: column;
+        
+    }
+    div.login_esquerdo h1 {
+        display: none;
+    }
+    div.login_esquerdo {
+        width: 100%;
+        height: auto;
+    }
+    div.login_direito {
+        width: 100%;
+        height: auto;
+    }
+    div.login_esquerdo img {
+        width: 40vw;
+    }
+    div.cartao_login {
+        width: 90vw;
+    }
+}
+
+
+
+
